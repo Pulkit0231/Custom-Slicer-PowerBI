@@ -1,0 +1,44 @@
+{
+  "dataRoles": [
+    { "displayName": "Field 1", "name": "field1", "kind": "Grouping" },
+    { "displayName": "Field 2", "name": "field2", "kind": "Grouping" },
+    { "displayName": "Field 3", "name": "field3", "kind": "Grouping" },
+    { "displayName": "Field 4", "name": "field4", "kind": "Grouping" },
+    { "displayName": "Field 5", "name": "field5", "kind": "Grouping" },
+    { "displayName": "Field 6", "name": "field6", "kind": "Grouping" },
+    { "displayName": "Field 7", "name": "field7", "kind": "Grouping" },
+    { "displayName": "Field 8", "name": "field8", "kind": "Grouping" },
+    { "displayName": "Field 9", "name": "field9", "kind": "Grouping" },
+    { "displayName": "Field 10", "name": "field10", "kind": "Grouping" },
+    { "displayName": "Field 11", "name": "field11", "kind": "Grouping" },
+    { "displayName": "Field 12", "name": "field12", "kind": "Grouping" }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "field1": { "max": 1 }, "field2": { "max": 1 },
+          "field3": { "max": 1 }, "field4": { "max": 1 },
+          "field5": { "max": 1 }, "field6": { "max": 1 },
+          "field7": { "max": 1 }, "field8": { "max": 1 },
+          "field9": { "max": 1 }, "field10": { "max": 1 },
+          "field11": { "max": 1 }, "field12": { "max": 1 }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            { "for": { "in": "field1" } }, { "for": { "in": "field2" } },
+            { "for": { "in": "field3" } }, { "for": { "in": "field4" } },
+            { "for": { "in": "field5" } }, { "for": { "in": "field6" } },
+            { "for": { "in": "field7" } }, { "for": { "in": "field8" } },
+            { "for": { "in": "field9" } }, { "for": { "in": "field10" } },
+            { "for": { "in": "field11" } }, { "for": { "in": "field12" } }
+          ],
+          "dataReductionAlgorithm": { "top": { "count": 30000 } }
+        }
+      }
+    }
+  ],
+  "privileges": []
+}

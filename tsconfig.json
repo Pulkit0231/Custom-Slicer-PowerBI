@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "Node16",
+        "allowJs": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es2022",
+        "sourceMap": true,
+        "outDir": "./.tmp/build/",
+        "rootDir": ".",
+        "moduleResolution": "node16",
+        "jsx": "react-jsx",
+        "declaration": true,
+        "lib": [
+            "es2022",
+            "dom"
+        ]
+    },
+    "files": [
+        "src/visual.tsx",
+        "src/App.tsx"
+    ],
+    "include": [
+        "src/**/*",
+        ".tmp/precompile/**/*.ts"
+    ]
+}
